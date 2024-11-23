@@ -179,3 +179,116 @@ h3{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
+/* Added some responsiveness */
+
+@media screen and (max-width: 1200px) {
+  .yap {
+    width: 600px;
+  }
+  
+  .intro {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    width: 90%;
+  }
+
+  .hero {
+    width: 90vw;
+  }
+
+  .dp img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    padding: 10px 0;
+  }
+
+  .intro {
+    flex-direction: column-reverse;
+    height: auto;
+    gap: 30px;
+  }
+
+  .bio {
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dp img {
+    margin-left: 0;
+  }
+
+  .yap {
+    width: 90%;
+    text-align: center;
+  }
+
+  .download-btn {
+    position: static;
+    margin-top: 20px;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    width: 100%;
+    border-radius: 0;
+    margin-top: 15px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  .dp img {
+    width: 250px;
+    height: 250px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .yap {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  nav ul li a {
+    font-size: 12px;
+  }
+
+  .dp img {
+    width: 200px;
+    height: 200px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
